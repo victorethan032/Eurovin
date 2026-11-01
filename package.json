@@ -1,0 +1,36 @@
+{
+  "name": "eurovin-backend",
+  "version": "2.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js && node test-remboursements.js && node test-rapport.js && node test-serveur.js && node test-facturation.js && node test-emails.js && node test-adminplus.js && node test-rappels.js && node test-vitrine.js",
+    "test:admin": "node test-admin.js",
+    "test:site": "node test-site.js",
+    "test:e2e": "node test-e2e.js",
+    "test:demo": "node test-demo.js",
+    "test:adminplus": "node test-adminplus.js",
+    "test:rappels": "node test-rappels.js",
+    "test:adminui": "node test-adminui.js",
+    "test:mobile": "node test-mobile.js",
+    "test:vitrine": "node test-vitrine.js",
+    "test:vitrine-ui": "node test-vitrine-ui.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "express": "^4.19.2",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "openai": "latest",
+    "pdf-lib": "^1.17.1",
+    "resend": "latest",
+    "stripe": "latest"
+  },
+  "devDependencies": {
+    "playwright": "^1.45.0"
+  }
+}
